@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>SB Admin - Start Bootstrap Template</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+
+  <!-- Pit scheduler-->
+  <link  rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <link  rel="stylesheet" type="text/css" href="/css/bootstrap-datetimepicker.css">
+  <link  rel="stylesheet" type="text/css" href="/css/pitscheduler.min.css">
+
+  <script src="/js/jquery-3.2.1.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/moment-with-locales.min.js"></script>
+  <script src="/js/bootstrap-datetimepicker.js"></script>
+  <script src="/js/pitscheduler.min.css"></script>
+</head>
+
+<body class="bg-dark">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Mens App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Maak</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Verander</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Verwijder</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="card card-login mx-auto mt-10">
+      <div id="pit-scheduler"></div>
+    </div>
+  </div>
+  <div class="card card-login mx-auto mt-5"></div>
+ <!-- End Nav -->
+  <!--<div class="container">-->
+    <!--<div class="card card-login mx-auto mt-5">-->
+      <!--<div class="card-header">Uitleg</div>-->
+      <!--<div class="card-body">Waarom maken we mensen?</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <div class="container">
+    <div class="card card-login mx-auto mt-5">
+      <div class="card-header">Maak mens</div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label>First Name</label>
+            <input class="form-control mens-naam" id="mens-naam" type="name" aria-describedby="emailHelp" placeholder="John">
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input class="form-control mens-achternaam" id="mens-achternaam" type="name" placeholder="Doe">
+          </div>
+          <div class="form-group">
+            <label>Age</label>
+            <input class="form-control mens-leeftijd" id="mens-leeftijd" type="age" placeholder="20">
+          </div>
+          <div class="form-group">
+          </div>
+          <a class="btn btn-primary btn-block mens-btn">Maak Mens</a>
+        </form>
+      </div>
+      <div id="hideme">
+        <div class="alert alert-danger">
+          <strong>PAS OP!</strong> Mensen maken is gevaarlijk.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Custom scripts for this page-->
+  <!--<script src="js/sb-admin-datatables.min.js"></script>-->
+  <script src="js/mens.js"></script>
+</body>
+
+</html>
