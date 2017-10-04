@@ -1274,10 +1274,10 @@ var i18n = {
                 '<span class="pts-header-date-display">',
                 (settings.currentDisplay === "months" ? moment(settings.date.selected).locale(settings.locale).format('MMMM YYYY') : moment(settings.date.selected).locale(settings.locale).format('LL')),
                 '</span></div>',
-                '<div class="pts-header-right-container pull-right">',
-                '<button class="btn btn-sm pts-btn-day-view ' + (settings.currentDisplay === "days" ? "pts-active" : "") + '">' + settings.i18n.days + '</button>',
-                '<button class="btn btn-sm pts-btn-month-view ' + (settings.currentDisplay === "months" ? "pts-active" : "") + '">' + settings.i18n.months + '</button>',
-                '<button class="btn btn-sm pts-btn-list-view" ' + (settings.currentDisplay === "list" ? "pts-active" : "") + '>' + settings.i18n.list + '</button></div></div>'].join('\n');
+                //'<div class="pts-header-right-container pull-right">',
+                //'<button class="btn btn-sm pts-btn-day-view ' + (settings.currentDisplay === "days" ? "pts-active" : "") + '">' + settings.i18n.days + '</button>',
+                //'<button class="btn btn-sm pts-btn-month-view ' + (settings.currentDisplay === "months" ? "pts-active" : "") + '">' + settings.i18n.months + '</button>',
+                '</div></div>'].join('\n');
 
             $scheduler.append($header);
             updateDatePicker();
@@ -1653,22 +1653,22 @@ var i18n = {
                 '<br><div class="divider"></div></div>'].join('\n');
             $('#pts-toolbox-container').append($content);
 
-            $.each(task.users, function (i) {
-                var user = settings.users[i];
-                var $head = ['<div class="pts-toolbox-user"><h4 class=" text-semibold heading-divided pts-show-user" data-user="' + user.index + '">' + user.name + '</h4>',
-                    '<table><tbody class="pts-toolbox-user-list" data-head="' + i + '"></tbody></table></div>'].join('\n');
-                $('#pts-toolbox-container > .panel-body').append($head);
-                user.tasks.forEach(function (_task, taskIndex) {
-                    if (_task.id === task.id) {
-                        var $userLine = [
-                            '<tr><td><i class="glyphicon glyphicon-trash pts-task-assign-delete-user" data-user="' + user.index + '" data-task="' + task.id + '" data-task-index="' + taskIndex + '"></i>',
-                            '<i class="glyphicon glyphicon-pencil pts-user-edit-task" data-user="' + user.index + '" data-task="' + task.id + '" data-task-index="' + taskIndex + '"></i>',
-                            '<b>' + settings.i18n.from + '</b> ' + moment(_task.start_date).locale(settings.locale).format('llll'),
-                            ' <b>' + settings.i18n.to + '</b> ' + moment(_task.end_date).locale(settings.locale).format('llll') + '</td></tr>'].join('\n');
-                        $('.pts-toolbox-user-list[data-head=' + i + ']').append($userLine);
-                    }
-                });
-            });
+//            $.each(task.users, function (i) {
+//                var user = settings.users[i];
+//                var $head = ['<div class="pts-toolbox-user"><h4 class=" text-semibold heading-divided pts-show-user" data-user="' + user.index + '">' + user.name + '</h4>',
+//                    '<table><tbody class="pts-toolbox-user-list" data-head="' + i + '"></tbody></table></div>'].join('\n');
+//                $('#pts-toolbox-container > .panel-body').append($head);
+//                user.tasks.forEach(function (_task, taskIndex) {
+//                    if (_task.id === task.id) {
+//                        var $userLine = [
+//                            '<tr><td><i class="glyphicon glyphicon-trash pts-task-assign-delete-user" data-user="' + user.index + '" data-task="' + task.id + '" data-task-index="' + taskIndex + '"></i>',
+//                            '<i class="glyphicon glyphicon-pencil pts-user-edit-task" data-user="' + user.index + '" data-task="' + task.id + '" data-task-index="' + taskIndex + '"></i>',
+//                            '<b>' + settings.i18n.from + '</b> ' + moment(_task.start_date).locale(settings.locale).format('llll'),
+//                            ' <b>' + settings.i18n.to + '</b> ' + moment(_task.end_date).locale(settings.locale).format('llll') + '</td></tr>'].join('\n');
+//                        $('.pts-toolbox-user-list[data-head=' + i + ']').append($userLine);
+//                    }
+//                });
+//            });
             getContrastedColor();
         };
 

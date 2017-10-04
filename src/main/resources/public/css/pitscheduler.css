@@ -3,8 +3,8 @@
 @font-face {
     font-family: 'Glyphicons Halflings';
 
-    src: url('../../fonts/glyphicons-halflings-regular.eot');
-    src: url('../../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+    src: url('fonts/glyphicons-halflings-regular.eot');
+    src: url('/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
 .btn {
@@ -67,7 +67,7 @@
 .pts-header {
     position: relative;
     height: 60px;
-    background-color: #00BCD4;
+    background-color: #FFFFFF;
 
 }
 
@@ -102,7 +102,7 @@
 
 .pts-btn-day-view, .pts-btn-month-view,
 .pts-btn-list-view, .pts-btn-next, .pts-btn-previous {
-    background-color: #B2EBF2;
+    background-color: #FFFFFF;
 }
 
 .pts-header-date-display {
@@ -117,7 +117,7 @@
 
 #header-datetimepicker span.input-group-addon {
     border: 0 !important;
-    background-color: #B2EBF2;
+    background-color: #FFFFFF;
 }
 
 .dropdown > button.dropdown-toggle {
@@ -133,7 +133,7 @@
 /************ line & column title ************/
 
 .pts-column-title-container {
-    background-color: #B2EBF2;
+    background-color: #FFFFFF;
     height: 45px;
     overflow: hidden;
     position: relative;
@@ -170,7 +170,7 @@
 }
 
 .pts-line-title-container {
-    background-color: #B2EBF2;
+    background-color: #FFFFFF;
     height: 400px;
     width: 150px;
     overflow-x: scroll;
